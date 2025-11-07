@@ -2,7 +2,7 @@
 # Global Route & Path Planning Module for Autonomous Vehicle (ROS 2/Python)
 
 <p align="center">
-  <img src="images/Block Diagram.jpg" width="900">
+  <img src="images/Figure_1.png" width="500">
 </p>
 
 ---
@@ -130,13 +130,35 @@ Edges
 
 ---
 
+## 📍 Map Visualization (Nodes, Edges & Cardinal Directions)
+
+The following figure illustrates the complete **topological graph** used by the route planner.  
+Each node represents an intersection/checkpoint in the model city, while each arrow shows a **directed edge** with its associated **cardinal direction**:
+
+- **Red = East (E)**
+- **Blue = West (W)**
+- **Green = North (N)**
+- **Purple = South (S)**
+
+This figure is essential for understanding:
+- how the roads are connected,
+- where direction transitions occur,
+- where turn penalties are applied in the enhanced A\*,
+- and how the vehicle can move through the indoor environment.
+
+<p align="center">
+  <img src="images/Figure_1.png" width="900">
+</p>
+
+---
+
 ## 🧭 Cardinal Orientation & Heading
 
 The cardinal‑aware planner attaches **semantic direction labels** to every edge, enabling consistent behavior through intersections (e.g., penalizing U‑turns, encouraging through movements).
 
 <p align="center">
-  <img src="images/orientatio_E_1.png" width="420">
-  <img src="images/orientatio_w_1.png" width="420">
+  <img src="images/orientatio_E_1.png" width="620">
+  <img src="images/orientatio_w_1.png" width="620">
 </p>
 
 In the **enhanced A\***, we apply **direction‑change penalties** (illustrative values):
