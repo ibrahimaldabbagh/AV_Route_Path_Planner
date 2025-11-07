@@ -157,8 +157,8 @@ This figure is essential for understanding:
 The cardinal‑aware planner attaches **semantic direction labels** to every edge, enabling consistent behavior through intersections (e.g., penalizing U‑turns, encouraging through movements).
 
 <p align="center">
-  <img src="images/orientatio_E_1.png" width="620">
-  <img src="images/orientatio_w_1.png" width="620">
+  <img src="images/orientatio_E_1.png" width="920">
+  <img src="images/orientatio_w_1.png" width="920">
 </p>
 
 In the **enhanced A\***, we apply **direction‑change penalties** (illustrative values):
