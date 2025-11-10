@@ -17,10 +17,11 @@ The module is designed for structured indoor environments (laboratories, model c
 
 ## 🎥 Demo
 
-> **Demo** — Example of the AV following a globally planned route inside the indoor model city. The global route is computed from the graph (nodes/edges) and enriched with cardinal directions so downstream modules can execute consistent turns and approaches.
+> **Demo** — Example of the AV following a globally planned route inside the indoor model city. The global route is computed from the graph (nodes/edges) and enriched with cardinal directions so the vehicle can recompute routes in consideration of its heading as showen in following demos.
 
 <p align="center">
-  <img src="images/AV.gif" width="880">
+  <img src="images/route1.gif" width="480">
+  <img src="images/route2.gif" width="480">
 </p>
 
 ---
